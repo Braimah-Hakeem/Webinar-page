@@ -1,0 +1,167 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #404040;
+    text-align: center;
+    font-size: 1rem;
+}
+
+h1{
+    font-size: 2.25rem;
+    font-weight: 300;
+    color: white;
+    margin: 0;
+}
+
+h1 + p {
+    color: #f18119;
+    font-size: 1.3125rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.3125rem;
+    margin: 0;
+}
+
+h2 + p {
+    color: #f18119;
+    font-size: 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.pg-top-subtitle {
+    font-size: 0.625rem;
+    font-weight: 900;
+    color: #f18119;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    order: -1;
+    border-top: 5px solid #ff713b;
+    margin-top: 0;
+    padding-top: 3px;
+}
+
+.fine-print {
+     font-size: .625rem;
+     letter-spacing: 1px;
+}
+
+ strong {
+     font-weight: 900;
+ }
+
+ 
+/* into section */
+.introduction {
+    background-image: url(../images/ribs.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-color: #404040;
+    padding: 0 .5em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 50vh;
+}
+
+/* main content */
+.main-content {
+    padding: 2em 1em;
+}
+
+.introduction > *,
+.main-content > * {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* form */
+#registrationForm {
+    width: 80%;
+    max-width: 300px;
+}
+
+input {
+    margin-bottom: .75em;
+    text-align: center;
+    font-family: inherit;
+    padding: .25em;
+    border: 1px solid #404040;
+}
+
+input:focus {
+    transform: scale(1.1);
+}
+
+.btn {
+    display: inline-block;
+    padding: .75em 1.5em;
+    font-size: 0.625rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-image: linear-gradient(to left, #ff713b, #ffa51d);
+    color: #fff;
+    transform: scale(1);
+    transition: color .5s;
+    transition: transform 100ms;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    color: black;
+    transform: scale(1.1);
+}
+
+input,
+.btn {
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+/* Media Queries */
+@media (min-width: 570px) {
+body {
+    font-size: 1.125rem;
+    display: flex;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h1 + p,
+h2 {
+    font-size: 1.75rem;
+}
+
+.introduction,
+.main-content {
+    width: 50%;
+    min-height: 100vh;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+}
